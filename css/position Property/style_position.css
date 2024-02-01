@@ -1,0 +1,42 @@
+div {
+  width: 100px;
+  height: 100px;
+  background-color: aquamarine;
+  border: 2px solid black;
+  display: inline-block;
+}
+
+#box1 {
+  /* Static Position k sath top, right,bottom ,left  and z-indexx property work nho karti*/
+  position: static;
+  /* top: 10px;
+  left: 40px;
+  right: 12px;
+  bottom: 40px; */
+}
+#box2 {
+  /* Static Position k sath top, right,bottom ,left  and z-indexx property work  karti hai */
+  position: relative;
+  top: 40px;
+  left: 12px;
+  z-index: 2;
+  right: 50px;
+  bottom: 12px;
+}
+#box3 {
+  position: absolute;
+  top: 45px;
+  left: 65px;
+}
+#box4 {
+  position: fixed;
+  top: 0px;
+  bottom: 20px;
+  background-color: red;
+  z-index: -1;
+}
+#box4 {
+  position: sticky;
+
+  background-color: pink;
+}

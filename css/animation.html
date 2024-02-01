@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation</title>
+    <style>
+      /* Animation */
+      .container {
+        background-color: aqua;
+        height: 80vh;
+        width: 30vw;
+      }
+      .box {
+        width: 50px;
+        height: 40px;
+        background-color: red;
+        /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+        /* animation: animationtushar 5s ease-in-out 4s 5 ; */
+        animation-name: animationtushar;
+        animation-duration: 3s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: 3;
+        animation-direction: reverse;
+      }
+      @keyframes animationtushar {
+        /* start */
+        from {
+          transform: translateX(10px) translateY(20px);
+        }
+        /* end */
+        to {
+          transform: translateX(100px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box translate">Box</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,54 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  background-color: black;
+}
+img {
+  padding-left: 10px;
+}
+nav {
+  display: flex;
+}
+nav ul {
+  display: flex;
+}
+li {
+  padding-top: 10px;
+}
+
+li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  padding-right: 20px;
+  padding-left: 10px;
+}
+a:hover {
+  color: red;
+}
+/* .serach-style {
+  background-color: wheat;
+} */
+.serach-style input {
+  background-color: wheat;
+  color: purple;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+.btn {
+  background-color: yellow;
+  border-radius: 8px;
+  margin: 8px;
+  width: 60px;
+}
+
+.btn a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}

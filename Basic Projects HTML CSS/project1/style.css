@@ -1,0 +1,75 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.universe {
+  width: 40vw;
+  aspect-ratio: 1;
+  background-color: #ffbb5c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  animation: skychange 10s linear;
+  animation-iteration-count: infinite;
+}
+@keyframes skychange {
+  0% {
+    background-color: #ffbb5cb5;
+  }
+  25% {
+    background-color: #26a85ab5;
+  }
+  50% {
+    background-color: #5c72ffb5;
+  }
+  75% {
+    background-color: #83185cb5;
+  }
+  100% {
+    background-color: #5cbbffb5;
+  }
+}
+.sun {
+  width: 18vw;
+  aspect-ratio: 1;
+  background-color: #e25e3e;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: inherit;
+    aspect-ratio: 1;
+    background-color: #000;
+    border-radius: inherit;
+    animation: moonwork 10s ease-in-out;
+    animation-iteration-count: infinite;
+  }
+}
+
+@keyframes moonwork {
+  0% {
+    translate: 100%;
+    scale: 1;
+  }
+  50% {
+    translate: 0%;
+    scale: 0.9;
+  }
+  100% {
+    translate: -100%;
+    scale: 0.9;
+  }
+}

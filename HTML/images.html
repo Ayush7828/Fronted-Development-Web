@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Images</title>
+    <style>
+      img {
+        border: 2px solid black;
+        box-shadow: 2px 1px 5px red;
+        width: 250px;
+      }
+    </style>
+  </head>
+  <body>
+    <img
+      src="https://img.freepik.com/free-vector/wild-animal-nature_1308-24911.jpg?w=740&t=st=1704616582~exp=1704617182~hmac=3d39ae22e00825e3cc51a54ac767927b7dd0258d23e21d8e9185dac43eff85ad"
+      alt="No image"
+      width="100%"
+      height="auto"
+      loading="lazy"
+    />
+
+    <br />
+
+    <br />
+    <a href="https://www.google.com/" target="_blank">
+      <img src="image.jpg" alt="" width="100% " height="auto" />
+    </a>
+    <br />
+    <a href="https://www.google.com/" target="_blank">
+      <img src="image.jpg" alt="" width="500px " height="500px" usemap="map" />
+    </a>
+    <map name="map">
+      <area
+        shape="rect"
+        coords="0,0,150,250"
+        href="https://www.propeers.in/roadmaps/657d7e45e3609127743ec629"
+        alt=""
+      />
+    </map>
+
+    <br />
+    <picture>
+      <source
+        srcset="
+          https://png.pngtree.com/png-clipart/20230511/ourmid/pngtree-isolated-cat-on-white-background-png-image_7094927.png
+        "
+      />
+      <source
+        srcset="
+          https://png.pngtree.com/png-clipart/20230511/ourmid/pngtree-isolated-cat-on-white-background-png-image_7094927.png
+        "
+      />
+      <img
+        src="https://png.pngtree.com/png-clipart/20230511/ourmid/pngtree-isolated-cat-on-white-background-png-image_7094927.png"
+        alt=" Cat Image"
+      />
+    </picture>
+    br
+
+    <figure>
+      <img
+        src="https://png.pngtree.com/png-clipart/20230511/ourmid/pngtree-isolated-cat-on-white-background-png-image_7094927.png"
+        alt=""
+      />
+      <figcaption>Hello Cat image here</figcaption>
+    </figure>
+  </body>
+</html>
